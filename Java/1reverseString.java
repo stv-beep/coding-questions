@@ -1,5 +1,5 @@
 //1. - Reverse string
-public class Main {
+public class 1reverseString {
 
 	public static void main(String[] args) {
 		
