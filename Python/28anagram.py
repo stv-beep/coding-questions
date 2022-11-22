@@ -5,7 +5,7 @@ Un Anagrama consiste en formar una palabra reordenando TODAS las letras de otra 
 NO hace falta comprobar que ambas palabras existan. Dos palabras exactamente iguales no son anagrama. """
 
 def isAnagram(s1: str, s2: str):
-        if s1 == s2:
+        if s1.lower() == s2.lower():
                 return False
         else:
                 return sorted(s1.lower()) == sorted(s2.lower())
@@ -13,4 +13,4 @@ def isAnagram(s1: str, s2: str):
 
 print(isAnagram("amor", "roma"))
 print(isAnagram("toma", "roma"))
-print(isAnagram("roma", "roma"))
+print(isAnagram("roma", "Roma"))
